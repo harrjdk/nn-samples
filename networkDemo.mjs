@@ -11,6 +11,19 @@ const tanh = (x) => {
     return Math.tanh(x);
 }
 
+const softmax = (x) => {
+    let sum = 0;
+    let exp = x.map((value)=>Math.E**value)
+    exp.forEach(value => {
+        sum+=value
+    });
+    exp = exp.map((value)=>value/sum);
+}
+
+const dropout = (x) => {
+    return Math.random<=0.03?x:0
+}
+
 function nonLin (x) {
     return 3 * x**3 + 4 * x**2 - 5 * x - 6;
 }
