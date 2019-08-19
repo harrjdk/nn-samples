@@ -1,0 +1,13 @@
+{
+  "name": "nn_samples",
+  "version": "1.0.0",
+  "description": "Sample neural networks",
+  "main": "index.js",
+  "repository": "https://github.com/hornetshell/nn-samples.git",
+  "author": "hornetshell <harrj902@protonmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "network": "node --experimental-modules networkDemo.mjs"
+  }
+}
